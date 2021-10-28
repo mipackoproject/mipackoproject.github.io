@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIPACKO FARRELA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+<body>
+
+<div class="sidebar-right" id="sidebar">
+    <button class="btn btn-primary btn-lg btn-circle" onclick="sidebarClose()"> <i class="fa fa-times"></i> </button>
+    <a href="index.html" class="active">HOME</a>
+    <a href="galery.html">GALLERY</a>
+    <a href="about.html">ABOUT</a>
+    <a href="contact.html">CONTACT</a>
+</div>
+
+<div class="bg">
+
+    <nav class="navbar justify-content-between">
+        <div class="mipackologo">
+            <a href="#">
+                <img src="assets/mipackologo.png"height="80px">
+            </a>
+        </div>
+        <div class="menu">
+            <a href="index.html" class="#">HOME</a>
+            <a href="galery.html">GALLERY</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+            <button class="btn btn-primary btn-lg icon" onclick="sidebarOpen()"><i class="fa fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <br>
+
+    <div class="container-fluid">
+
+        <div class="d-sm-flex justify-content-around content">
+
+            <div class="content-left" style="margin-top: 40px;">
+                <br>
+                <br>
+                <h1 class="text-blue"><b>MIPACKO</b></h1>
+                <h1>ONLINE SHOP</h1>
+                <div class="description">
+                    <p>Mipacko is the first specialist microfiber manufacturer in Indonesia that produces high quality microfiber products for various daily hygiene needs.
+
+                        We create user friendly and ergonomic products that deliver perfect results entirely chemical free.</p>
+                </div>
+                <a href="https://www.mipacko.com/" class="btn btn-primary btn-lg">GET STARTED</a>
+                <br>
+                <br>
+                <h5 class="text-blue"><b>SOCIAL MEDIA :</b></h5>
+                <a class="social-media-icon" href="https://www.instagram.com/mipacko_/" target="_blank"><span class="fab fa-instagram fa-2x"></span></a>
+                <a class="social-media-icon" href="https://www.facebook.com/MicrofiberIndonesia/" target="_blank"><span class="fab fa-facebook fa-2x"></span></a>
+                <a class="social-media-icon" href="https://twitter.com/mipacko" target="_blank"><span class="fab fa-twitter fa-2x"></span></a>    
+                <a class="social-media-icon" href="https://www.youtube.com/c/MicrofiberIdMipackoMicrofiberIndonesia" target="_blank"><span class="fab fa-youtube fa-2x"></span></a>
+                <a class="social-media-icon" href="https://wa.me/6282217680990" target="_blank"><span class="fab fa-whatsapp fa-2x"></span></a>
+                </br>
+            </div>
+            
+            <div class="image1">
+                <img src="assets/image1.png" alt="" srcset="" height="450px">
+                
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+<script>
+    function sidebarOpen(){
+        document.getElementById("sidebar").style.transform = "translateX(0px)";
+    }
+    function sidebarClose(){
+        document.getElementById("sidebar").style.transform = "translateX(300px)";
+    }
+</script>
+</html>
